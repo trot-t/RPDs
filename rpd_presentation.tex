@@ -63,7 +63,7 @@
 \leavevmode%
 \hbox{%
 \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
-Прокшин А.Н. и др.
+Прокшин А.Н.
 \end{beamercolorbox}%
 \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{}%
 Санкт-Петербург, 2022
@@ -144,6 +144,7 @@
 \item создание мобильных лабораторных стендов; % по тематике кафедры с перспективой на использование российских разработок;
 \item использование российского программного обеспечения;
 \item использование российских микроконтроллеров в части задач 
+\item востребованность специалистов, умеющих программировать микроконтроллеры для электродвижения (самокаты, электромобили, электрокатера) и преобразователей электрической энергии
 %\item оформление УМКД;
 %\item ... будет сформулирована в результатах.
 \end{itemize}
@@ -235,7 +236,7 @@
 
 
 \begin{frame}
-\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Используемые в обучении информационные и \enquote{сквозные} технологии, цифровые инструменты}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
 \vspace{-0.5cm}
 \begin{columns}[t]
     \column{.50\textwidth}
@@ -249,155 +250,231 @@
     \end{exampleblock}
    \column{.50\textwidth}
     \footnotesize
-    \begin{exampleblock}{\footnotesize Передача активной и реактивной мощности между электрической машиной и промышленной сетью}
+    \begin{exampleblock}{\footnotesize Системы координат в современной геометрии, косоугольная система координат, ковариантные и контравариантные координаты в косоугольной системе координат}
       \begin{itemize}
-        \item изображающие векторы напряжения и тока
-        \item реактивная мощность стекает с повышенного напряжения
-        \item вектор напряжения передающей активную мощность электрической машины обгоняет вектор приемника
-        \item вектор тока одинаков для обеих машин 
+        \item \colorbox{yellow}{\parbox{0.7\textwidth}{формула длины вектора в косоугольной системе координат $|\vec{x}|=\sqrt{x_1x^1 + x_2x^2}$}}
+        \item \colorbox{yellow}{\parbox{0.82\textwidth}{скалярное произведение двух векторов $\vec{x}\cdot\vec{y} = x_iy^i =  x^iy_i$}}
+        \item \colorbox{yellow}{правило Эйнштейна}
+        \item сравнение с прямоугольной декартовой системой координат
       \end{itemize}
     \end{exampleblock}
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\vspace{-0.5cm}
+\includegraphics[scale=0.2]{1}
+\end{frame}
 
-\foreach \ThemeA\ItemsA\ThemeB\ItemsB in {
-Принципы работы однофазного мостового инвертора напряжения 
-/{
-   чисто активная нагрузка,
-   нагрузка или источник содержит индуктивность или дроссель,
-   работа обратного диода,
-   передаваемая мощность при медленно меняющемся токе и быстро меняющемся напряжении в зависимости от скважности
-}/
-Принципы работы трехфазного мостового инвертора напряжения
-/{
-   порядок переключения ключей,
-   график токов в фазах при активной нагрузке,
-   графики фазных и линейных напряжений,
-   изображающие вектора фазных и линейных напряжений и токов
-},
-Работа ключей при векторной широтно-импульсной модуляции в трехфазном мостовом инверторе напряжения
-/{
-   таблица векторов состояний,
-   нулевой вектор состоит из 2-х состояний,
-   изображающий вектор как центр тяжести состояний взвешенных по времени нахождения в данном состоянии,
-   потенциалы фаз и нуля
-}/
-Синусоидальная широтно-импульсная модуляция в однофазном или трехфазном мостовом инверторе напряжения
-/{
-   наличие реального или \enquote{виртуального} нулевого провода,
-   отличие активной мощности при синусоидальной и векторной широтно-импульсной модуляциях
-},
-Системы координат. Преобразование базисов и координат из одной системы в другую
-/{
-   разложение вектора по координатным осям по правилу параллелограмма,
-   матрица преобразования
-}/
-{Системы координат в современной геометрии, косоугольная система координат, ковариантные и контравариантные координаты в косоугольной системе координат}
-/{
-   \colorbox{yellow}{\parbox{0.7\textwidth}{формула длины вектора в косоугольной системе координат $|\vec{x}|=\sqrt{x_1x^1 + x_2x^2}$}},
-   \colorbox{yellow}{\parbox{0.82\textwidth}{скалярное произведение двух векторов $\vec{x}\cdot\vec{y} = x_iy^i =  x^iy_i$}},
-   \colorbox{yellow}{правило Эйнштейна},
-   сравнение с прямоугольной декартовой системой координат
-%   \it метрический тензор
-},
-Измеряемые мгновенные значения токов и напряжений и их связь с ковариантными координатами
-/{
-   преобразование Блонделя $\vec{i} = \frac{2}{3}\left(i_a \vec{e}_a + i_b \vec{e}_b + i_c \vec{e}_c\right)$,
-   \colorbox{yellow}{\parbox{0.82\textwidth}{формула для $\vec{i}$ в симметричной системе координат, полусумма контравариантных координат равна контравариантной координате
+ \begin{frame}
+ \frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+ \vspace{-0.5cm}
+ \begin{columns}[t]
+     \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Измеряемые мгновенные значения токов и напряжений и их связь с ковариантными координатами}
+        \begin{itemize}
+           \item   преобразование Блонделя $\vec{i} = \frac{2}{3}\left(i_a \vec{e}_a + i_b \vec{e}_b + i_c \vec{e}_c\right)$,
+	   \item \colorbox{yellow}{\parbox{0.82\textwidth}{формула для $\vec{i}$ в симметричной системе координат, полусумма контравариантных координат равна контравариантной координате
          $$
              i_a = \frac{1}{2}\left(i^a_\text {в осях AB} + i^a_\text{ в осях AC} \right)
          $$}}
-}/
-управление ШИМ через центр тяжести весов векторов состояния инвертора и связь с контравариантными координатами
-/{
-   \colorbox{yellow}{\parbox{0.82\textwidth}{правило рычага Архимеда для определения цента тяжести весов векторов состояния инвертора}},
-   \colorbox{yellow}{\parbox{0.82\textwidth}{матрица преобразования ковариантных (измеренных) координат к контравариантным (координатам управления) изображающего вектора напряжения}}
-},
-{Активная мощность, скалярное произведение в косоугольной системе координат}
-/{
-   физическая величина есть сумма произведений ковариантной и контравариантной координат $i_k\cdot u^k$,
-   поднимание и опускание индексов $i_k\cdot u^k = i^k\cdot u_k$,
-   линейное напряжение как контравариантная координата в осях фазного тока,
-   \colorbox{yellow}{\parbox{0.82\textwidth}{формула мощности в трехфазной сети через ковариантные и контравариантные координаты}}
-}/
-Реактивная мощность в координатах косоугольной системы
-/{ связь реактивной мощности с векторным произведением
-},
-Напряжение индукции в координатах косоугольной системы
-/{
-  при неизменном амплитудном значении тока напряжение индукции перпендикулярно вектору тока,
-  \colorbox{yellow}{\parbox{0.82\textwidth}{перпендикуляр к вектору через двойственные координаты $(I_A, I_B)\cdot (-I^B, I^A)$, где $I^i$ в двойственном базисе}}
-}/
-{Генерация широтно-импульсной модуляции с помощью таймера, варианты пилообразных сигналов, определение скважностей $T_A$, $T_B$, $T_C$}
-/{
-   {принцип работы таймера, период, время срабатывания таймера},
-   виды пилы таймеров,
-   запись и извлечение уставок таймера в теневой (shadow) регистра,
-   {формула перевода весов состояний в уставки таймеров $T_A$, $T_B$, $T_C$}
-},
-{Использование неопределенности скважностей $T_A$, $T_B$, $T_C$ для уменьшения нагрева силовых ключей}
-/{
-   мощность потерь силовых ключей,
-   спектральный состав
-}/
-Аналогово-цифровое преобразование
-/{
-   принцип работы АЦП,
-   зависимость точности АЦП от времени оцифровки,
-   запуск АЦП от прерывания ШИМ
-},
-Интегрированные системы программирования микроконтроллеров
-/{
-    \colorbox{yellow}{\parbox{0.82\textwidth}{российские системы MexBIOS, VectorIDE, SimInTech}},
-    {зарубежные системы фирм Texas Instrument, STM, Infineon}
-}/
-Построение систем управления в МехBIOS
-/{
-   распределение памяти в микроконтроллере,
-   драйверы GPIO,
-   драйверы АЦП,
-   драйверы ШИМ,
-   драйверы SPI,
-   осциллограф,
-   блоки управления
-}} {
-\begin{frame}
-\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Используемые в обучении информационные и \enquote{сквозные} технологии, цифровые инструменты}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
-\vspace{-0.5cm}
-\begin{columns}[t]
-    \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize \ThemeA}
-     \begin{itemize}
-     \foreach \ItemA in \ItemsA {\item \ItemA}
-     \end{itemize}
-    \end{exampleblock}
-    \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize \ThemeB}
-     \begin{itemize}
-     \foreach \ItemA in \ItemsB {\item \ItemA}
-     \end{itemize}
+        \end{itemize}
      \end{exampleblock}
-\end{columns}
+    \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize управление ШИМ через центр тяжести весов векторов состояния инвертора и связь с контравариантными координатами}
+       \begin{itemize}
+         \item    \colorbox{yellow}{\parbox{0.82\textwidth}{правило рычага Архимеда для определения цента тяжести весов векторов состояния инвертора}},
+         \item     \colorbox{yellow}{\parbox{0.82\textwidth}{матрица преобразования ковариантных (измеренных) координат к контравариантным (координатам управления) изображающего вектора напряжения}}
+      \end{itemize}
+     \end{exampleblock}
+ \end{columns}
+ \end{frame}
+
+\begin{frame}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\vspace{-0.5cm}
+\includegraphics[scale=0.2]{6}
+\end{frame}
+
+ \begin{frame}
+ \frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+ \vspace{-0.5cm}
+ \begin{columns}[t]
+     \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Активная мощность, скалярное произведение в косоугольной системе координат}
+        \begin{itemize}
+           \item    физическая величина есть сумма произведений ковариантной и контравариантной координат $i_k\cdot u^k$,
+           \item поднимание и опускание индексов $i_k\cdot u^k = i^k\cdot u_k$,
+           \item   линейное напряжение как контравариантная координата в осях фазного тока,
+           \item   \colorbox{yellow}{\parbox{0.82\textwidth}{формула мощности в трехфазной сети через ковариантные и контравариантные координаты}}
+        \end{itemize}
+     \end{exampleblock}
+    \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Напряжение индукции в координатах косоугольной системы}
+       \begin{itemize}
+         \item  при неизменном амплитудном значении тока напряжение индукции перпендикулярно вектору тока,
+         \item \colorbox{yellow}{\parbox{0.82\textwidth}{перпендикуляр к вектору через двойственные координаты $(I_A, I_B)\cdot (-I^B, I^A)$, где $I^i$ в двойственном базисе}}
+      \end{itemize}
+     \end{exampleblock}
+ \end{columns}
+ \end{frame}
+
+\begin{frame}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\vspace{-0.5cm}
+\includegraphics[scale=0.2]{2}
 \end{frame}
 }
 
 
+%  \foreach \ThemeA\ItemsA\ThemeB\ItemsB in {
+%  Принципы работы однофазного мостового инвертора напряжения 
+%  /{
+%     чисто активная нагрузка,
+%     нагрузка или источник содержит индуктивность или дроссель,
+%     работа обратного диода,
+%     передаваемая мощность при медленно меняющемся токе и быстро меняющемся напряжении в зависимости от скважности
+%  }/
+%  Принципы работы трехфазного мостового инвертора напряжения
+%  /{
+%     порядок переключения ключей,
+%     график токов в фазах при активной нагрузке,
+%     графики фазных и линейных напряжений,
+%     изображающие вектора фазных и линейных напряжений и токов
+%  },
+%  Работа ключей при векторной широтно-импульсной модуляции в трехфазном мостовом инверторе напряжения
+%  /{
+%     таблица векторов состояний,
+%     нулевой вектор состоит из 2-х состояний,
+%     изображающий вектор как центр тяжести состояний взвешенных по времени нахождения в данном состоянии,
+%     потенциалы фаз и нуля
+%  }/
+%  Синусоидальная широтно-импульсная модуляция в однофазном или трехфазном мостовом инверторе напряжения
+%  /{
+%     наличие реального или \enquote{виртуального} нулевого провода,
+%     отличие активной мощности при синусоидальной и векторной широтно-импульсной модуляциях
+%  },
+%  Системы координат. Преобразование базисов и координат из одной системы в другую
+%  /{
+%     разложение вектора по координатным осям по правилу параллелограмма,
+%     матрица преобразования
+%  }/
+%  {Системы координат в современной геометрии, косоугольная система координат, ковариантные и контравариантные координаты в косоугольной системе координат}
+%  /{
+%     \colorbox{yellow}{\parbox{0.7\textwidth}{формула длины вектора в косоугольной системе координат $|\vec{x}|=\sqrt{x_1x^1 + x_2x^2}$}},
+%     \colorbox{yellow}{\parbox{0.82\textwidth}{скалярное произведение двух векторов $\vec{x}\cdot\vec{y} = x_iy^i =  x^iy_i$}},
+%     \colorbox{yellow}{правило Эйнштейна},
+%     сравнение с прямоугольной декартовой системой координат
+%  %   \it метрический тензор
+%  },
+%  Измеряемые мгновенные значения токов и напряжений и их связь с ковариантными координатами
+%  /{
+%     преобразование Блонделя $\vec{i} = \frac{2}{3}\left(i_a \vec{e}_a + i_b \vec{e}_b + i_c \vec{e}_c\right)$,
+%     \colorbox{yellow}{\parbox{0.82\textwidth}{формула для $\vec{i}$ в симметричной системе координат, полусумма контравариантных координат равна контравариантной координате
+%           $$
+%               i_a = \frac{1}{2}\left(i^a_\text {в осях AB} + i^a_\text{ в осях AC} \right)
+%           $$}}
+%  }/
+%  управление ШИМ через центр тяжести весов векторов состояния инвертора и связь с контравариантными координатами
+%  /{
+%     \colorbox{yellow}{\parbox{0.82\textwidth}{правило рычага Архимеда для определения цента тяжести весов векторов состояния инвертора}},
+%     \colorbox{yellow}{\parbox{0.82\textwidth}{матрица преобразования ковариантных (измеренных) координат к контравариантным (координатам управления) изображающего вектора напряжения}}
+%  },
+%  {Активная мощность, скалярное произведение в косоугольной системе координат}
+%  /{
+%     физическая величина есть сумма произведений ковариантной и контравариантной координат $i_k\cdot u^k$,
+%     поднимание и опускание индексов $i_k\cdot u^k = i^k\cdot u_k$,
+%     линейное напряжение как контравариантная координата в осях фазного тока,
+%     \colorbox{yellow}{\parbox{0.82\textwidth}{формула мощности в трехфазной сети через ковариантные и контравариантные координаты}}
+%  }/
+%  Реактивная мощность в координатах косоугольной системы
+%  /{ связь реактивной мощности с векторным произведением
+%  },
+%  Напряжение индукции в координатах косоугольной системы
+%  /{
+%    при неизменном амплитудном значении тока напряжение индукции перпендикулярно вектору тока,
+%    \colorbox{yellow}{\parbox{0.82\textwidth}{перпендикуляр к вектору через двойственные координаты $(I_A, I_B)\cdot (-I^B, I^A)$, где $I^i$ в двойственном базисе}}
+%  }/
+%  {Генерация широтно-импульсной модуляции с помощью таймера, варианты пилообразных сигналов, определение скважностей $T_A$, $T_B$, $T_C$}
+%  /{
+%     {принцип работы таймера, период, время срабатывания таймера},
+%     виды пилы таймеров,
+%     запись и извлечение уставок таймера в теневой (shadow) регистра,
+%     {формула перевода весов состояний в уставки таймеров $T_A$, $T_B$, $T_C$}
+%  },
+%  {Использование неопределенности скважностей $T_A$, $T_B$, $T_C$ для уменьшения нагрева силовых ключей}
+%  /{
+%     мощность потерь силовых ключей,
+%     спектральный состав
+%  }/
+%  Аналогово-цифровое преобразование
+%  /{
+%     принцип работы АЦП,
+%     зависимость точности АЦП от времени оцифровки,
+%     запуск АЦП от прерывания ШИМ
+%  },
+%  Интегрированные системы программирования микроконтроллеров
+%  /{
+%      \colorbox{yellow}{\parbox{0.82\textwidth}{российские системы MexBIOS, VectorIDE, SimInTech}},
+%      {зарубежные системы фирм Texas Instument, STM, Infineon}
+%  }/
+%  Построение систем управления в МехBIOS
+%  /{
+%     распределение памяти в микроконтроллере,
+%     драйверы GPIO,
+%     драйверы АЦП,
+%     драйверы ШИМ,
+%     драйверы SPI,
+%     осциллограф,
+%     блоки управления
+%  }} {
+%  \begin{frame}
+%  \frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  \vspace{-0.5cm}
+%  \begin{columns}[t]
+%      \column{.50\textwidth}
+%       \footnotesize
+%       \begin{exampleblock}{\footnotesize \ThemeA}
+%       \begin{itemize}
+%       \foreach \ItemA in \ItemsA {\item \ItemA}
+%       \end{itemize}
+%      \end{exampleblock}
+%      \column{.50\textwidth}
+%       \footnotesize
+%       \begin{exampleblock}{\footnotesize \ThemeB}
+%       \begin{itemize}
+%       \foreach \ItemA in \ItemsB {\item \ItemA}
+%       \end{itemize}
+%       \end{exampleblock}
+%  \end{columns}
+%  \end{frame}
+%  }
+%  
+
 
 \begin{frame}
-\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Используемые в обучении информационные и \enquote{сквозные} технологии, цифровые инструменты}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
 \vspace{-0.5cm}
 \begin{columns}[t]
     \column{.50\textwidth}
     \footnotesize
-    \begin{exampleblock}{\footnotesize Написание пользовательских блоков в системе MexBIOS}
-       \begin{itemize}
-          \item переменные портов ввода-вывода
-          \item внутренние переменные
-          \item компиляция блоков, библиотек, ядра системы 
-       \end{itemize}
+%    \begin{exampleblock}{\footnotesize Написание пользовательских блоков в системе MexBIOS}
+%       \begin{itemize}
+%          \item переменные портов ввода-вывода
+%          \item внутренние переменные
+%          \item компиляция блоков, библиотек, ядра системы 
+%       \end{itemize}
+%    \end{exampleblock}
+   \begin{exampleblock}{\footnotesize Интегрированные системы программирования микроконтроллеров}
+    \begin{itemize}
+    \item \colorbox{yellow}{\parbox{0.82\textwidth}{российские системы MexBIOS, VectorIDE, SimInTech}},
+    \item {зарубежные системы фирм Texas Instument, STM, Infineon}
+    \end{itemize}
     \end{exampleblock}
    \column{.50\textwidth}
     \footnotesize
@@ -444,52 +521,52 @@
 \end{frame}
 
 
- \begin{frame}
- \frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
- \vspace{-0.5cm}
- \begin{columns}[t]
-     \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize Создание программы для управления асинхронным двигателем}
-        \begin{itemize}
-           \item Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech
-           \item Загрузка программы в микроконтроллер и управление асинхронным двигателем  
-        \end{itemize}
-     \end{exampleblock}
-    \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize Создание программы для управления инвертором, сопряженным с трехфазной сетью}
-       \begin{itemize} 
-         \item Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech
-         \item Загрузка программы в микроконтроллер и управление зарядом, разрядом батареи, подключенной с помощью инвертора к трехфазной сети
-      \end{itemize}
-     \end{exampleblock}
- \end{columns}
- \end{frame}
-
-
- \begin{frame}
-\frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
- \vspace{-0.5cm}
- \begin{columns}[t]
-     \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize Создание программы для управления синхронным двигателем}
-        \begin{itemize}
-           \item Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech
-           \item Загрузка программы в микроконтроллер и управление синхронным двигателем
-        \end{itemize}
-     \end{exampleblock}
-    \column{.50\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize Создание программы для управления СТАТКОМом}
-       \begin{itemize} 
-         \item Моделирование системы управления СТАТКОМом в средах ngspice, MexBIOS или SimInTech
-         \item Загрузка программы в микроконтроллер и управление перетоками реактивной мощности с помощью СТАТКОМ
-      \end{itemize}
-     \end{exampleblock}
- \end{columns}
- \end{frame}
+%  \begin{frame}
+%  \frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  \vspace{-0.5cm}
+%  \begin{columns}[t]
+%      \column{.50\textwidth}
+%      \footnotesize
+%      \begin{exampleblock}{\footnotesize Создание программы для управления асинхронным двигателем}
+%         \begin{itemize}
+%            \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+%            \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление асинхронным двигателем}}  
+%         \end{itemize}
+%      \end{exampleblock}
+%     \column{.50\textwidth}
+%      \footnotesize
+%      \begin{exampleblock}{\footnotesize Создание программы для управления инвертором, сопряженным с трехфазной сетью}
+%        \begin{itemize} 
+%          \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+%          \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление зарядом, разрядом батареи, подключенной с помощью инвертора к трехфазной сети}}
+%       \end{itemize}
+%      \end{exampleblock}
+%  \end{columns}
+%  \end{frame}
+% 
+% 
+%  \begin{frame}
+% \frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  \vspace{-0.5cm}
+%  \begin{columns}[t]
+%      \column{.50\textwidth}
+%      \footnotesize
+%      \begin{exampleblock}{\footnotesize Создание программы для управления синхронным двигателем}
+%         \begin{itemize}
+%            \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+%            \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление синхронным двигателем}}
+%         \end{itemize}
+%      \end{exampleblock}
+%     \column{.50\textwidth}
+%      \footnotesize
+%      \begin{exampleblock}{\footnotesize Создание программы для управления СТАТКОМом}
+%        \begin{itemize} 
+%          \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления СТАТКОМом в средах ngspice, MexBIOS или SimInTech}}
+%          \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление перетоками реактивной мощности с помощью СТАТКОМ}}
+%       \end{itemize}
+%      \end{exampleblock}
+%  \end{columns}
+%  \end{frame}
 
 
 
@@ -512,6 +589,149 @@
          \item ознакомиться со справочными системами компилятора
          \item ознакомиться со справочниками блоков MexBIOS
          \item ознакомиться со справочниками блоков SimInTech
+      \end{itemize}
+     \end{exampleblock}
+ \end{columns}
+ \end{frame}
+
+
+\begin{frame}
+\frametitle{\begin{tabular}{lp{10pt}r}\parbox{0.65\textwidth}{\small Лекционный блок}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+\vspace{-0.5cm}
+\centering
+\includegraphics[scale=0.2]{3}
+\end{frame}
+
+ \begin{frame}
+ \frametitle{\begin{tabular}{lp{50pt}r}Фонд оценочных средств&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+ {\footnotesize\vspace{-0.7cm}
+\begin{itemize}
+%\item \colorbox{yellow}{Если уменьшить количество переменных то программа может быть написана более эффективно?}
+\item \colorbox{yellow}{\parbox{0.92\textwidth}{Изобразить ковариантные(перпендикулярные проекции на оси фаз) и контравариантные(координаты разложения вектора по правилу параллелограмма) координаты.}}
+\item \colorbox{yellow}{\parbox{0.82\textwidth}{Линейное напряжение и фазный ток это проекции на двойственные оси}}
+\item \colorbox{yellow}{\parbox{0.82\textwidth}{Производная по координате направлена по двойственному базису и перпендикулярна оси данной координаты}}
+\item Производная по времени от вектора с постоянной длиной перпендикулярна самому вектору
+\item \colorbox{yellow}{\parbox{0.92\textwidth}{Первая производная в точке касания окружности с центром в точке из которой проведен перпендикуляр к оси совпадает с этой осью, а вторая производная в точке касания совпадает с перпендикуляром к этой оси}}
+%\item Трехфазная система токов и/или напряжений является декартовой системой?
+%\item Измеряемые мгновенные значения тока/напряжения являются перпендикулярными проекциями на оси фаз.
+%\item Перпендикулярные проекции на оси фаз A,B являются координатами разложения вектора тока/напряжения по правилу паралеллограмма?
+%\item Что называется координатами вектора: перпендикулярные проекции или координатами разложения вектора по правилу паралеллограмма?
+%\item Переход из косоугольной системы координат в декартову систему координат уменьшает количество координат?
+%\item Изобразить ковариантные(перпендикулярные проекции на оси фаз) к контравариантные(координаты разложения вектора по правилу параллелограмма) координаты.
+
+\end{itemize}
+}
+\end{frame}
+
+% \begin{frame}
+%  \frametitle{\begin{tabular}{lp{50pt}r}Фонд оценочных средств&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  {\footnotesize\vspace{-0.5cm}
+% \begin{itemize}
+% \item Длина вектора в косоугольной системе координат.
+% \item Скалярное произведение двух векторов в косоугольной системе координат.
+% \item Провести разложение вектора пользуясь только перпендикулярными проекциями вектора на оси фаз.
+% \item Двойственный базис, разложение вектора по двойственному базису
+% \item Линейное напряжение и фазный ток это проекции на двойственные оси
+% \item Производная по координате направлена по двойственному базису и перпендикулярна оси данной координаты
+% \item Производная по времени от вектора с постоянной длиной перпендикулярна самому вектору
+% \end{itemize}
+% }
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{\begin{tabular}{lp{50pt}r}Фонд оценочных средств&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  {\footnotesize\vspace{-0.5cm}
+% \begin{itemize}
+% 
+% \item Первая производная в точке касания окружности с центром в точке из которой проведен перпендикуляр к оси совпадает с этой осью, а вторая производная в точке касания совпадает с перпендикуляром к этой оси.
+% \item Входные координаты преобразования Кларка являются ковариантными координатами (перпендикулярными проекциями вектора тока на оси фаз)
+% \item Входные координаты обратного преобразования Кларка являются контравариантными координатами (координатами разложения вектора по правилу параллелограмма).
+% \item Преобразование ковариантных координат в контравариантные и обратно.
+% \item Состояния ключей трехфазного инвертора и потенциал в каждой из фаз.
+% \item Векторная диаграмма тока и напряжений трехфазных двух электрических машин, соединенных дросселем.
+% \item Активная мощность и её связь со скалярным произведением тока и напряжения
+% \item Мощность трехфазной электрической машины и связь мощности со скалярным произведением двойственных координат тока и напряжения.
+% \end{itemize}
+% }
+% \end{frame}
+% 
+% \begin{frame}
+%  \frametitle{\begin{tabular}{lp{50pt}r}Фонд оценочных средств&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  {\footnotesize\vspace{-0.5cm}
+% \begin{itemize}
+% \item Компилятор toolchain.
+% \item Организация памяти микроконтроллера.
+% \item Реализация ШИМ средствами таймера.
+% \item Принцип работы аналого-цифрового преобразователя и его настройка.
+% \item GPIO и его настройка.
+% \item Передача входных параметров в блоке MexBIOS
+% \item Выходные параметры в блоке MexBIOS
+% \item Квант времени в блоке MexBIOS
+% \item Цифровой фильтр для выделения частоты
+% \end{itemize}
+% }
+% \end{frame}
+% 
+% 
+%  \begin{frame}
+%  \frametitle{\begin{tabular}{lp{50pt}r}Фонд оценочных средств&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+%  \vspace{-0.5cm}
+%  \begin{columns}[t]
+%      \column{.80\textwidth}
+%      \footnotesize
+%        \begin{exampleblock}{\footnotesize Для кейса должен быть достигнут результат управления с помощью инвертора электрической машиной:}
+%          \begin{itemize}
+%             \item Асинхронный, синхронный двигатель должны вращаться в указанном направлении и выдавать указанную мощность
+%             \item Активная мощность для заряда или разряда батареи должна течь в указанном направлении и выдавать указанную мощность 
+%             \item Реактивная мощность в СТАТКОМ должна течь в указанном направлении  и выдавать указанную реактивную мощность
+%          \end{itemize}
+%       \end{exampleblock}
+%  \end{columns}
+%  \end{frame}
+
+ \begin{frame}
+ \frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+ \vspace{-0.5cm}
+ \begin{columns}[t]
+     \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Создание программы для управления асинхронным двигателем}
+        \begin{itemize}
+           \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+           \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление асинхронным двигателем}}
+        \end{itemize}
+     \end{exampleblock}
+    \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Создание программы для управления инвертором, сопряженным с трехфазной сетью}
+       \begin{itemize}
+         \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+         \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление зарядом, разрядом батареи, подключенной с помощью инвертора к трехфазной сети}}
+      \end{itemize}
+     \end{exampleblock}
+ \end{columns}
+ \end{frame}
+
+
+
+ \begin{frame}
+\frametitle{\begin{tabular}{lp{200pt}r}Кейсы&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+ \vspace{-0.5cm}
+ \begin{columns}[t]
+     \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Создание программы для управления синхронным двигателем}
+        \begin{itemize}
+           \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления инвертором в средах ngspice, MexBIOS или SimInTech}}
+           \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление синхронным двигателем}}
+        \end{itemize}
+     \end{exampleblock}
+    \column{.50\textwidth}
+     \footnotesize
+     \begin{exampleblock}{\footnotesize Создание программы для управления СТАТКОМом}
+       \begin{itemize}
+         \item \colorbox{yellow}{\parbox{0.7\textwidth}{Моделирование системы управления СТАТКОМом в средах ngspice, MexBIOS или SimInTech}}
+         \item \colorbox{yellow}{\parbox{0.7\textwidth}{Загрузка программы в микроконтроллер и управление перетоками реактивной мощности с помощью СТАТКОМ}}
       \end{itemize}
      \end{exampleblock}
  \end{columns}
@@ -664,22 +884,22 @@
  \end{columns}
  \end{frame}
 
-\begin{frame}
-\frametitle{\begin{tabular}{lp{0pt}r}\small{Учебно-методическое и информационное обеспечение}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
- \vspace{-1cm}
- \begin{columns}[t]
-     \column{1\textwidth}
-     \footnotesize
-     \begin{exampleblock}{\footnotesize Перечень основной учебной литературы}
-        \begin{itemize}
-         \item Соколовский Г.Г. Электроприводы переменного тока с частотным регулированием: Учебник для студ. высш.учеб.заведений.
-                -- М. «Академия», 2007 - 272 с.
-         \item Ю.Н. Калачев SimInTech: моделирование в электроприводе -- М.изд. ДМК, 2019 -- 95 с.
-         \item С.Г.Герман-Галкин и др. Модельное проектирование электромеханических мехатронных модулей движения в среде SimInTech -- M.изд. ДМК, 2020 -- 494 с.
-       \end{itemize}
-     \end{exampleblock}
- \end{columns}
- \end{frame}
+% \begin{frame}
+% \frametitle{\begin{tabular}{lp{0pt}r}\small{Учебно-методическое и информационное обеспечение}&&\includegraphics[width=0.25\linewidth]{logo2}\end{tabular}}
+% \vspace{-1cm}
+% \begin{columns}[t]
+%     \column{1\textwidth}
+%     \footnotesize
+%     \begin{exampleblock}{\footnotesize Перечень основной учебной литературы}
+%        \begin{itemize}
+%         \item Соколовский Г.Г. Электроприводы переменного тока с частотным регулированием: Учебник для студ. высш.учеб.заведений.
+%                -- М. «Академия», 2007 - 272 с.
+%         \item Ю.Н. Калачев SimInTech: моделирование в электроприводе -- М.изд. ДМК, 2019 -- 95 с.
+%         \item С.Г.Герман-Галкин и др. Модельное проектирование электромеханических мехатронных модулей движения в среде SimInTech -- M.изд. ДМК, 2020 -- 494 с.
+%       \end{itemize}
+%     \end{exampleblock}
+% \end{columns}
+% \end{frame}
 
 
  \begin{frame}
@@ -692,7 +912,7 @@
         \begin{itemize}
           \item А.А.Горев Переходные процессы синхронной машины -- М.,Л., Гос. энергетическое изд., 1950. -- 551 c.
           \item Программа для векторной широтно-импульсной модуляции для системы управления трехфазной электрической машиной с использованием \colorbox{yellow}{ковариантных и контравариантных координат изображающего вектора}. Свидетельство о государственной регистрации программы для ЭВМ
-          \item Программа для системы управления трехфазной электрической машиной c векторной широтно-импульсной модуляцией. Свидетельство о государственной регистрации программы для ЭВМ №2020662398 от 13 октября 2020
+          \item Программа для системы управления трехфазной электрической машиной c векторной широтно-импульсной модуляцией. Свидетельство о государственной регистрации программы для ЭВМ №2020662398 от 13 октября 2020 \colorbox{yellow}{ngspice}
           \item \colorbox{yellow}{Веб интерфейс к ngspice} (NG-Spice web interface). Свидетельство о государственной регистрации программы для ЭВМ 
        \end{itemize}
      \end{exampleblock}
@@ -720,6 +940,11 @@
  \end{columns}
  \end{frame}
 
+\begin{frame}
+ \vspace{2cm} 
+ \centering
+ {\Huge Спасибо за внимание!}
+\end{frame}
 
 
 % \begin{frame}
